@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Behavioral Interview Simulator | Competency Interview Practice Software</title>
+  <meta name="description" content="Behavioral interview practice simulator for competency based job interview preparation. Practice STAR style answers with structured prompts, category coverage, and timed mock sessions.">
+  <link rel="canonical" href="https://example.com/behavioral-interview-simulator/">
+
+  <meta property="og:title" content="Behavioral Interview Simulator">
+  <meta property="og:description" content="Practice behavioral interview questions with structured sessions, category coverage, and STAR answer guidance.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/behavioral-interview-simulator/">
+  <meta property="og:image" content="https://example.com/behavioral-interview-simulator/og-image.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Behavioral Interview Simulator">
+  <meta name="twitter:description" content="Behavioral interview practice with STAR answer structure, mock sessions, and category coverage.">
+  <meta name="twitter:image" content="https://example.com/behavioral-interview-simulator/og-image.png">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <meta name="theme-color" content="#2b1730">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Behavioral Interview",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "Web, macOS, Windows",
+    "description": "Behavioral interview practice simulator for competency based job interview preparation. Practice STAR style answers with structured prompts, category coverage, and timed mock sessions.",
+    "url": "https://example.com/behavioral-interview-simulator/",
+    "offers": {
+      "@type": "Offer",
+      "price": "0.00",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+</head>
+<body data-page="practice">
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Behavioral Interview Simulator">
+      <span class="brand-mark">BI</span>
+      <span>
+        <strong>Behavioral Interview Simulator</strong>
+        <small>10 question free web practice</small>
+      </span>
+    </a>
+
+    <nav class="top-actions" aria-label="Primary navigation">
+      <a class="button button-ghost" href="#practice">Practice</a>
+      <a class="button button-warm" href="preview.html">Preview Full Version</a>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <section id="practice" class="practice-layout">
+      <section class="practice-card" aria-label="Current practice question">
+        <div class="session-bar">
+          <div class="metric progress-metric">
+            <span>Progress</span>
+            <strong id="progressText">1 / 10</strong>
+            <div class="progress-track" aria-hidden="true">
+              <div id="progressFill" class="progress-fill"></div>
+            </div>
+          </div>
+
+          <div class="metric">
+            <span>Question Time</span>
+            <strong id="timerText">00:00</strong>
+          </div>
+
+          <div class="metric">
+            <span>Marked</span>
+            <strong id="markedCount">0</strong>
+          </div>
+        </div>
+
+        <article class="question-panel">
+          <div class="question-meta">
+            <span id="questionNumber">Question 1</span>
+            <span id="questionId">BI001</span>
+          </div>
+
+          <h1 id="questionText">Tell me about yourself in a way that connects your background to this role.</h1>
+
+          <p id="questionNote" class="question-note" hidden></p>
+
+          <div id="tagList" class="tag-list" aria-label="Question categories"></div>
+
+          <div class="answer-angle">
+            <h2>Answer angle</h2>
+            <ul id="answerAngleList"></ul>
+          </div>
+
+          <div class="question-footer">
+            <span id="remainingText">9 remaining</span>
+            <span>No login. Local practice only.</span>
+          </div>
+        </article>
+
+        <div class="practice-controls">
+          <button id="reviewButton" class="button button-outline" type="button">Mark for Review</button>
+          <button id="resetButton" class="button button-secondary" type="button">Reset Session</button>
+          <button id="nextButton" class="button button-primary" type="button">Next Question</button>
+        </div>
+      </section>
+
+      <aside class="side-stack" aria-label="Practice details">
+        <section class="side-card">
+          <h2>Category Distribution</h2>
+          <div id="distributionList" class="distribution-list"></div>
+        </section>
+
+        <section class="side-card">
+          <h2>Marked Questions</h2>
+          <div id="markedList" class="marked-list">No questions marked yet.</div>
+        </section>
+
+        <section class="side-card full-card">
+          <p class="eyebrow">Full version</p>
+          <h2>Need the full 120 question toolkit?</h2>
+          <p>Preview the full simulator with all 120 prompts, structured category coverage, timed mock sessions, and a searchable question workflow.</p>
+          <a class="button button-warm full-width" href="preview.html">Preview Full Version</a>
+        </section>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="footer-note">This is an independent interview preparation tool. It does not guarantee interview invitations, job offers, employment outcomes, or employer approval.</footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
