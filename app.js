@@ -422,7 +422,11 @@ const PRODUCT = {
     "Review any marked questions.",
     "Reset the session for another shuffled run.",
     "Use the STAR framework to improve weaker examples."
-  ]
+  ],
+  "manifest": {
+    "name": "Behavioral Interview Simulator",
+    "shortName": "Behavioral Interview"
+  }
 };
 
 const QUESTIONS = PRODUCT.freeQuestionBank;
