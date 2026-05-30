@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://example.com/behavioral-interview-simulator/sitemap.xml
+Sitemap: https://behavioral.mockbase.app/sitemap.xml
